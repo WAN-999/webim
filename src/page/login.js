@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Input, Form} from 'antd';
 import './Login.css'
 import { userLogin } from '../webapi/user';
-import {getAllUser} from '../webapi/user'
+import {getAllUser} from '../webapi/user' 
 // import Password from 'antd/lib/input/Password';
 
 class Login extends React.Component{

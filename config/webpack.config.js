@@ -345,6 +345,13 @@ module.exports = function (webpackEnv) {
           loader: require.resolve('source-map-loader'),
         },
         {
+          test: /\.js$/,
+          use: {
+            //用 babel-loader 把es6转es5
+            loader: "babel-loader",
+          }
+        },
+        {
           // "oneOf" will traverse all following loaders until one will
           // match the requirements. When no loader matches it will fall
           // back to the "file" loader at the end of the loader list.
